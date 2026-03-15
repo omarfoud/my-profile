@@ -148,6 +148,34 @@
             position: relative;
             z-index: 1;
             max-width: 700px;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 0 0 300px;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border: 4px solid var(--white);
+            transition: var(--transition);
+        }
+
+        .hero-image:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .greeting {
@@ -525,6 +553,17 @@
             .hero h1 { font-size: 40px; }
             .hero p { font-size: 18px; }
             nav ul { display: none; } /* Simplified mobile view */
+            
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .hero-image {
+                flex: 0 0 250px;
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -548,19 +587,24 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="greeting">Hello, world!</span>
-                <h1>I'm <span>Omar Fouda</span></h1>
-                <p>
-                    Machine Learning Engineer focused on building intelligent systems
-                    using Python, TensorFlow, and modern data science tools.
-                </p>
-                <div class="hero-btns">
-                    <a href="https://github.com/omarfoud" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i> GitHub Profile
-                    </a>
-                    <a href="https://www.linkedin.com/in/omar-fouda-07ab01282" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
+                <div class="hero-text">
+                    <span class="greeting">Hello, world!</span>
+                    <h1>I'm <span>Omar Fouda</span></h1>
+                    <p>
+                        Machine Learning Engineer focused on building intelligent systems
+                        using Python, TensorFlow, and modern data science tools.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="https://github.com/omarfoud" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> GitHub Profile
+                        </a>
+                        <a href="https://www.linkedin.com/in/omar-fouda-07ab01282" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/foudas copy.jpg" alt="Omar Fouda">
                 </div>
             </div>
         </div>
