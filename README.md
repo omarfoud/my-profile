@@ -1,7 +1,5 @@
 # Omar Fouda - Machine Learning Engineer Portfolio
 
-![Portfolio Preview](./preview.png)
-
 A modern, responsive personal portfolio website built to showcase my projects, skills, and certifications as a Machine Learning Engineer.
 
 ## 🚀 Live Demo
