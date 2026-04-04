@@ -671,6 +671,7 @@
                     <li><a href="#certificates" class="nav-link">Certificates</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="CV.pdf" class="btn btn-primary" download="Omar_Fouda_CV.pdf" style="padding: 8px 16px; font-size: 14px; margin-left: 10px;">Download CV</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars"></i>
@@ -682,6 +683,7 @@
                         <li><a href="#certificates" class="nav-link" onclick="closeMobileMenu()">Certificates</a></li>
                         <li><a href="#projects" class="nav-link" onclick="closeMobileMenu()">Projects</a></li>
                         <li><a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a></li>
+                        <li><a href="CV.pdf" class="nav-link" download="Omar_Fouda_CV.pdf" style="color: var(--primary); font-weight: 700;">Download CV</a></li>
                     </ul>
                 </div>
             </nav>
@@ -705,7 +707,7 @@
                         <a href="https://github.com/omarfoud" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub Profile
                         </a>
-                        <a href="https://www.linkedin.com/in/omar-fouda-07ab01282" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/omar-fouda" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
                         <a href="CV.pdf" class="btn btn-secondary" download="Omar_Fouda_CV.pdf">
@@ -749,17 +751,18 @@
             <div class="skills-container">
                 <div class="skill-tag"><i class="fab fa-python" style="color: #3776AB;"></i> Python</div>
                 <div class="skill-tag">C++</div>
-                <div class="skill-tag"><i class="fab fa-java" style="color: #007396;"></i> Java</div>
-                <div class="skill-tag">TensorFlow</div>
+                <div class="skill-tag">TensorFlow & Keras</div>
                 <div class="skill-tag">PyTorch</div>
                 <div class="skill-tag">scikit-learn</div>
-                <div class="skill-tag">Pandas</div>
-                <div class="skill-tag">NumPy</div>
+                <div class="skill-tag">OpenCV</div>
+                <div class="skill-tag">Gemini API & OpenAI API</div>
+                <div class="skill-tag">ChromaDB & FAISS</div>
+                <div class="skill-tag">RAG pipelines</div>
+                <div class="skill-tag">Pandas & NumPy</div>
                 <div class="skill-tag">FastAPI</div>
                 <div class="skill-tag">Streamlit</div>
-                <div class="skill-tag">MongoDB</div>
-                <div class="skill-tag"><i class="fas fa-database" style="color: #336791;"></i> SQL</div>
-                <div class="skill-tag"><i class="fab fa-git-alt" style="color: #F05032;"></i> Git</div>
+                <div class="skill-tag"><i class="fas fa-database" style="color: #336791;"></i> SQL & MongoDB</div>
+                <div class="skill-tag"><i class="fab fa-git-alt" style="color: #F05032;"></i> Git & GitHub</div>
             </div>
         </div>
     </section>
@@ -830,24 +833,32 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>ML Classification & Clustering Tool</h3>
+                    <h3>Arabic-First Multimodal RAG Backend</h3>
                     <p>
-                        A GUI application for exploring machine learning workflows on CSV datasets.
-                        Supports classification using Random Forest and clustering using K-Means
-                        with PCA visualization.
+                        Production-ready Retrieval-Augmented Generation API (FastAPI) prioritizing Arabic/English content.
+                        Ingests videos, audios, and PDFs via FFmpeg and Tesseract OCR, using Gemini/OpenAI models and ChromaDB for intelligent summaries and MCQs.
                     </p>
-                    <a href="https://github.com/omarfoud/ML_GUI" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/omarfoud" class="project-link" target="_blank" rel="noopener noreferrer">
                         View Source <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="project-card">
-                    <h3>Hotel Management System</h3>
+                    <h3>Job Assistant Master API</h3>
                     <p>
-                        Desktop application built with Python and Tkinter implementing MVC
-                        architecture and SOLID principles for managing hotel reservations,
-                        check-in, and room availability.
+                        Graduation Project matching candidates with jobs combining FAISS vector search and SQL fallback.
+                        Processes CVs using Gemini for AI gap analysis and actionable career advice, matching semantic content with job descriptions.
                     </p>
-                    <a href="https://github.com/omarfoud/hotel-gui" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/omarfoud" class="project-link" target="_blank" rel="noopener noreferrer">
+                        View Source <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Diabetes Prediction Public API</h3>
+                    <p>
+                        Live REST API exposing a trained scikit-learn diabetes prediction model using FastAPI and ngrok.
+                        Accepts patient data via JSON to return human-readable predictions, alongside end-to-end API testing.
+                    </p>
+                    <a href="https://github.com/omarfoud/diabetes-public-api" class="project-link" target="_blank" rel="noopener noreferrer">
                         View Source <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -862,6 +873,10 @@
             </div>
             <p>Feel free to reach out for collaborations or just a friendly hello!</p>
             <div class="contact-details">
+                <a href="tel:+201095259706" class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    +201095259706
+                </a>
                 <a href="mailto:omarfouda117@gmail.com" class="contact-item">
                     <i class="fas fa-envelope"></i>
                     omarfouda117@gmail.com
@@ -870,9 +885,13 @@
                     <i class="fab fa-github"></i>
                     github.com/omarfoud
                 </a>
-                <a href="https://www.linkedin.com/in/omar-fouda-07ab01282/" class="contact-item" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/omar-fouda" class="contact-item" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
-                    linkedin.com/in/omar-fouda-07ab01282
+                    linkedin.com/in/omar-fouda
+                </a>
+                <a href="https://kaggle.com/omaralifouda" class="contact-item" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-kaggle"></i>
+                    kaggle.com/omaralifouda
                 </a>
             </div>
         </div>
