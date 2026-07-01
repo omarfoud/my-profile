@@ -18,7 +18,6 @@ A static GitHub Pages portfolio for Omar Fouda, focused on applied AI, retrieval
 
 - [Educational RAG Backend](https://github.com/omarfoud/Educational_rag)
 - [Jobify AI Matching Backend](https://github.com/omarfoud/gradution_project)
-- [Jobify Frontend AI Integration](https://github.com/omarfoud/jobify-frontend-ai)
 - [Diabetes Prediction Public API](https://github.com/omarfoud/diabetes-public-api)
 
 ## Technology Stack
