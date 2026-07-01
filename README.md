@@ -1,43 +1,48 @@
 # Omar Fouda - Machine Learning Engineer Portfolio
 
-A modern, responsive personal portfolio website built to showcase my projects, skills, and certifications as a Machine Learning Engineer.
+A static GitHub Pages portfolio for Omar Fouda, focused on applied AI, retrieval-augmented generation, computer vision, and production FastAPI machine learning systems.
 
-## 🚀 Live Demo
-*(You can add your GitHub Pages link here once enabled)*
+## Live Site
+
 [View Portfolio](https://omarfoud.github.io/my-profile/)
 
-## ✨ Features
-- **Modern UI/UX**: Clean design with a focus on readability and smooth user experience.
-- **Responsive Navigation**: A sticky header with smooth scrolling links.
-- **Hero Section**: An eye-catching introduction with direct links to GitHub and LinkedIn.
-- **Skills Showcase**: Visual tags for technical proficiencies (Python, TensorFlow, PyTorch, C++, etc.).
-- **Certifications Gallery**: Display of professional certificates from ITI, Kaggle, and Manara.
-- **Project Cards**: Clean layouts to highlight featured machine learning and desktop application projects.
-- **Responsive Design**: Fully adaptable layout for mobile, tablet, and desktop viewing.
+## Highlights
 
-## 🛠️ Technology Stack
-- **HTML5**: Semantic and accessible document structure.
-- **CSS3**: Custom vanilla CSS with modern features (CSS Variables, Flexbox, CSS Grid).
-- **Google Fonts**: Utilizing `Outfit` for headings and `Inter` for body text.
-- **FontAwesome**: Scalable vector icons for clean visual cues.
+- Responsive one-page portfolio built with HTML, CSS, and vanilla JavaScript.
+- Updated positioning around applied AI, RAG, semantic search, and backend deployment.
+- Featured project links point to specific GitHub repositories instead of the generic profile page.
+- Downloadable CV PDF aligned with the website content.
+- Certifications, technical skills, contact links, and project summaries in one scan-friendly page.
 
-## 🔧 Local Setup
-To run this project locally, simply clone the repository and open the `index.html` file in your preferred web browser:
+## Featured Projects
+
+- [Educational RAG Backend](https://github.com/omarfoud/Educational_rag)
+- [Jobify AI Matching Backend](https://github.com/omarfoud/gradution_project)
+- [Jobify Frontend AI Integration](https://github.com/omarfoud/jobify-frontend-ai)
+- [Diabetes Prediction Public API](https://github.com/omarfoud/diabetes-public-api)
+
+## Technology Stack
+
+- HTML5
+- CSS3 with custom properties, flexbox, and CSS grid
+- Vanilla JavaScript
+- Google Fonts
+- Font Awesome icons
+
+## Local Setup
+
+Clone the repository and open `index.html` in a browser:
 
 ```bash
-# Clone the repository
 git clone https://github.com/omarfoud/my-profile.git
-
-# Navigate into the directory
 cd my-profile
-
-# Open index.html (Or use a Live Server extension in VS Code)
 ```
 
-## 📬 Contact
-- **Email**: omarfouda117@gmail.com
-- **LinkedIn**: [omar-fouda-07ab01282](https://www.linkedin.com/in/omar-fouda-07ab01282/)
-- **GitHub**: [@omarfoud](https://github.com/omarfoud)
+No build step is required.
 
----
-*Designed & Built by Omar Fouda - 2026*
+## Contact
+
+- Email: <omarfouda117@gmail.com>
+- LinkedIn: [omar-fouda-07ab01282](https://www.linkedin.com/in/omar-fouda-07ab01282/)
+- GitHub: [@omarfoud](https://github.com/omarfoud)
+- Kaggle: [omaralifouda](https://kaggle.com/omaralifouda)
