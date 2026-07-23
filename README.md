@@ -1,6 +1,6 @@
-# Omar Fouda - Machine Learning Engineer Portfolio
+# Omar Fouda - Backend and ML Portfolio
 
-A static GitHub Pages portfolio for Omar Fouda, focused on applied AI, retrieval-augmented generation, computer vision, and production FastAPI machine learning systems.
+A static GitHub Pages portfolio for Omar Fouda, focused on secure backend systems for applied machine learning products.
 
 ## Live Site
 
@@ -9,9 +9,10 @@ A static GitHub Pages portfolio for Omar Fouda, focused on applied AI, retrieval
 ## Highlights
 
 - Responsive one-page portfolio built with HTML, CSS, and vanilla JavaScript.
-- Updated positioning around applied AI, RAG, semantic search, and backend deployment.
+- Evidence-backed Jobify case study covering the problem, architecture decisions, security work, outcomes, and limitations.
+- Focused positioning for backend and ML hiring managers.
 - Featured project links point to specific GitHub repositories instead of the generic profile page.
-- Downloadable CV PDF aligned with the website content.
+- Downloadable `Omar_Fouda_CV.pdf` aligned with the website content.
 - Certifications, technical skills, contact links, and project summaries in one scan-friendly page.
 
 ## Featured Projects
@@ -42,6 +43,6 @@ No build step is required.
 ## Contact
 
 - Email: <omarfouda117@gmail.com>
-- LinkedIn: [omar-fouda-07ab01282](https://www.linkedin.com/in/omar-fouda-07ab01282/)
+- LinkedIn: [omar-fouda](https://www.linkedin.com/in/omar-fouda/)
 - GitHub: [@omarfoud](https://github.com/omarfoud)
 - Kaggle: [omaralifouda](https://kaggle.com/omaralifouda)
