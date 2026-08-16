@@ -50,6 +50,7 @@
             font-size: 16px;
             line-height: 1.7;
             letter-spacing: 0;
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -90,6 +91,8 @@
             line-height: 1.08;
             letter-spacing: 0;
             margin-bottom: 22px;
+            overflow-wrap: anywhere;
+            text-wrap: balance;
         }
 
         .section-lead {
@@ -191,6 +194,23 @@
             color: var(--teal);
         }
 
+        .nav-cta {
+            align-items: center;
+            border: 1px solid rgba(11, 107, 94, 0.26);
+            border-radius: 6px;
+            color: var(--teal);
+            display: inline-flex;
+            gap: 8px;
+            min-height: 38px;
+            padding: 7px 12px;
+        }
+
+        .nav-cta:hover,
+        .nav-cta:focus-visible {
+            background: var(--teal);
+            color: var(--white);
+        }
+
         .menu-toggle {
             align-items: center;
             background: transparent;
@@ -209,7 +229,8 @@
             background-color: #101815;
             color: var(--white);
             display: flex;
-            min-height: 78vh;
+            min-height: 680px;
+            min-height: clamp(640px, 78svh, 820px);
             overflow: hidden;
             padding: calc(var(--header-height) + 76px) 0 68px;
             position: relative;
@@ -232,7 +253,8 @@
         }
 
         .hero-content {
-            max-width: 770px;
+            max-width: min(770px, 100%);
+            min-width: 0;
             position: relative;
             z-index: 1;
         }
@@ -251,6 +273,7 @@
             line-height: 0.98;
             letter-spacing: 0;
             margin-bottom: 20px;
+            text-wrap: balance;
         }
 
         .hero-value {
@@ -259,6 +282,7 @@
             line-height: 1.35;
             margin-bottom: 16px;
             max-width: 680px;
+            text-wrap: balance;
         }
 
         .hero-context {
@@ -299,10 +323,12 @@
         .proof-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            min-width: 0;
         }
 
         .proof-item {
             border-right: 1px solid var(--line);
+            min-width: 0;
             padding: 26px 30px;
         }
 
@@ -328,6 +354,7 @@
             color: var(--muted);
             font-size: 13px;
             font-weight: 700;
+            overflow-wrap: anywhere;
         }
 
         section {
@@ -346,6 +373,15 @@
             padding-bottom: 52px;
         }
 
+        .case-header > *,
+        .case-content,
+        .case-index,
+        .about-copy,
+        .about-facts,
+        .contact-grid > * {
+            min-width: 0;
+        }
+
         .case-summary {
             align-self: end;
             color: var(--muted);
@@ -358,6 +394,48 @@
             font-size: 13px;
             margin-bottom: 5px;
             text-transform: uppercase;
+        }
+
+        .case-snapshot {
+            border-bottom: 1px solid var(--line);
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .case-snapshot-item {
+            border-right: 1px solid var(--line);
+            min-width: 0;
+            padding: 24px;
+        }
+
+        .case-snapshot-item:first-child {
+            padding-left: 0;
+        }
+
+        .case-snapshot-item:last-child {
+            border-right: 0;
+        }
+
+        .case-snapshot-item span {
+            color: var(--rust);
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .case-snapshot-item strong {
+            display: block;
+            font-size: 17px;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .case-snapshot-item p {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
         }
 
         .case-body {
@@ -541,6 +619,7 @@
             display: flex;
             flex-direction: column;
             min-height: 300px;
+            min-width: 0;
             padding: 28px;
         }
 
@@ -562,6 +641,7 @@
         .project-card p {
             color: var(--muted);
             font-size: 14px;
+            overflow-wrap: anywhere;
         }
 
         .project-tech {
@@ -618,6 +698,7 @@
         .fact span {
             color: var(--muted);
             font-size: 14px;
+            overflow-wrap: anywhere;
         }
 
         .skills {
@@ -639,6 +720,7 @@
 
         .skill-group {
             border-right: 1px solid #394441;
+            min-width: 0;
             padding: 26px;
         }
 
@@ -659,6 +741,7 @@
         .skill-group p {
             color: #c7d0cc;
             font-size: 13px;
+            overflow-wrap: anywhere;
         }
 
         .certifications {
@@ -687,6 +770,8 @@
 
         .cert-row strong {
             font-size: 15px;
+            min-width: 0;
+            overflow-wrap: anywhere;
         }
 
         .cert-row span {
@@ -713,6 +798,7 @@
             font-size: 48px;
             line-height: 1.08;
             margin-bottom: 16px;
+            text-wrap: balance;
         }
 
         .contact p {
@@ -733,6 +819,8 @@
             font-size: 14px;
             font-weight: 700;
             gap: 10px;
+            min-width: 0;
+            overflow-wrap: anywhere;
             padding: 10px 0;
             text-decoration: none;
         }
@@ -776,6 +864,21 @@
                 position: static;
             }
 
+            .case-snapshot {
+                grid-template-columns: 1fr;
+            }
+
+            .case-snapshot-item,
+            .case-snapshot-item:first-child {
+                border-bottom: 1px solid var(--line);
+                border-right: 0;
+                padding: 20px 0;
+            }
+
+            .case-snapshot-item:last-child {
+                border-bottom: 0;
+            }
+
             .decision-grid,
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -797,7 +900,9 @@
             }
 
             .container {
-                width: min(100% - 32px, 1160px);
+                padding-left: 16px;
+                padding-right: 16px;
+                width: 100%;
             }
 
             .nav-links {
@@ -829,17 +934,22 @@
                 width: 100%;
             }
 
+            .nav-cta {
+                border-color: rgba(11, 107, 94, 0.18);
+                margin-top: 4px;
+            }
+
             .menu-toggle {
                 display: inline-flex;
             }
 
             .hero {
-                min-height: 76vh;
-                padding: calc(var(--header-height) + 64px) 0 48px;
+                min-height: auto;
+                padding: calc(var(--header-height) + 42px) 0 42px;
             }
 
             .hero-photo {
-                object-position: 58% 50%;
+                object-position: 62% 44%;
             }
 
             .hero::after {
@@ -847,11 +957,17 @@
             }
 
             .hero h1 {
-                font-size: 46px;
+                font-size: clamp(40px, 12vw, 46px);
             }
 
             .hero-value {
-                font-size: 21px;
+                font-size: 20px;
+                max-width: 100%;
+            }
+
+            .hero-context {
+                font-size: 15px;
+                max-width: 100%;
             }
 
             .hero-actions {
@@ -861,6 +977,16 @@
 
             .hero-actions .btn {
                 width: 100%;
+            }
+
+            .hero-links {
+                gap: 14px;
+            }
+
+            .hero-links a {
+                align-items: center;
+                display: inline-flex;
+                gap: 7px;
             }
 
             .proof-grid,
@@ -963,6 +1089,7 @@
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#skills">Skills</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link nav-cta" href="Omar_Fouda_CV.pdf" download><i class="fa-solid fa-download" aria-hidden="true"></i> CV</a></li>
                 </ul>
             </nav>
         </div>
@@ -970,13 +1097,13 @@
 
     <main id="top">
         <section class="hero" aria-labelledby="hero-title">
-            <img class="hero-photo" src="images/omar-fouda-hero-v4.jpg" alt="Omar Fouda in a dark suit at an engineering workspace">
+            <img class="hero-photo" src="images/omar-fouda-hero-v4.jpg" alt="Omar Fouda in a dark suit at an engineering workspace" fetchpriority="high" decoding="async">
             <div class="container">
                 <div class="hero-content">
                     <p class="hero-kicker">Backend / ML Engineer</p>
                     <h1 id="hero-title">Omar Fouda</h1>
                     <p class="hero-value">I build backend systems for search, matching, and secure AI workflows.</p>
-                    <p class="hero-context">Recent Information Systems graduate and current FlyRank ML intern. I use FastAPI, vector search, and practical security controls to turn applied ML features into services teams can review and depend on.</p>
+                    <p class="hero-context">Recent Information Systems graduate and FlyRank ML intern (2026-present). I use FastAPI, vector search, and practical security controls to turn applied ML features into services teams can review and depend on.</p>
                     <div class="hero-actions">
                         <a class="btn btn-primary" href="mailto:omarfouda117@gmail.com?subject=Backend%20or%20ML%20engineering%20opportunity"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact me</a>
                         <a class="btn btn-light" href="#work"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i> View Jobify case</a>
@@ -1009,6 +1136,24 @@
                     <div class="case-summary">
                         <strong>Stack</strong>
                         FastAPI, FAISS, Sentence Transformers, Gemini, SQL Server, SQLite, Docker
+                    </div>
+                </div>
+
+                <div class="case-snapshot" aria-label="Jobify case study highlights">
+                    <div class="case-snapshot-item">
+                        <span>Architecture</span>
+                        <strong>Separate FastAPI AI service</strong>
+                        <p>Resume parsing, embeddings, FAISS search, and Gemini chat stay outside the main CRUD platform.</p>
+                    </div>
+                    <div class="case-snapshot-item">
+                        <span>Security</span>
+                        <strong>Trust boundaries tightened</strong>
+                        <p>Authorization, JWT defaults, resume URL validation, and concurrent index writes were reviewed and hardened.</p>
+                    </div>
+                    <div class="case-snapshot-item">
+                        <span>Outcome</span>
+                        <strong>Evidence without overclaiming</strong>
+                        <p>17 endpoints, externalized artifacts, and 45 tests are presented with the system limits clearly named.</p>
                     </div>
                 </div>
 
@@ -1131,12 +1276,12 @@
                     <h2 class="section-title">Recent graduate, current ML intern, practical builder</h2>
                     <p>I am Omar Fouda, a backend/ML engineer and 2026 graduate of Menoufia University's Faculty of Computers and Information. I earned a B.Sc. in Computers and Information, specializing in Information Systems.</p>
                     <p>I build Python backends and applied ML features, with a focus on semantic search, recommendation systems, integrations, and the security work needed to make them dependable.</p>
-                    <p>I am currently completing an ML internship with FlyRank, where I am strengthening my practice around data contracts, leakage checks, baselines, validation, and careful reporting.</p>
+                    <p>I am completing a 2026 ML internship with FlyRank, where I am strengthening my practice around data contracts, leakage checks, baselines, validation, and careful reporting.</p>
                 </div>
                 <div class="about-facts" aria-label="Background details">
                     <div class="fact"><strong>Based in</strong><span>Egypt</span></div>
                     <div class="fact"><strong>Education</strong><span>B.Sc. Computers and Information (Information Systems), Menoufia University</span></div>
-                    <div class="fact"><strong>Current</strong><span>ML internship with FlyRank</span></div>
+                    <div class="fact"><strong>Current</strong><span>ML internship with FlyRank (2026-present)</span></div>
                     <div class="fact"><strong>Interested in</strong><span>Backend engineering, applied ML, semantic search, RAG, and recommendation systems</span></div>
                     <div class="fact"><strong>Languages</strong><span>Arabic (native), English (professional working proficiency)</span></div>
                 </div>
