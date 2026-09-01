@@ -1,6 +1,6 @@
-# Omar Fouda - Backend and ML Portfolio
+# Omar Fouda - Machine Learning and Applied AI Portfolio
 
-A static GitHub Pages portfolio for Omar Fouda, focused on secure backend systems for applied machine learning products.
+A static GitHub Pages portfolio for Omar Fouda, focused on production-oriented RAG, AI agents, semantic search, computer vision, and machine learning systems.
 
 ## Live Site
 
@@ -9,11 +9,12 @@ A static GitHub Pages portfolio for Omar Fouda, focused on secure backend system
 ## Highlights
 
 - Responsive one-page portfolio built with HTML, CSS, and vanilla JavaScript.
+- Paid AI engineering experience on Nabra's live educational platform.
 - Evidence-backed Jobify case study covering the problem, architecture decisions, security work, outcomes, and limitations.
-- Focused positioning for backend and ML hiring managers.
+- Focused positioning for Machine Learning, Applied AI, and AI Backend hiring managers.
 - Featured project links point to specific GitHub repositories instead of the generic profile page.
 - Downloadable `Omar_Fouda_CV.pdf` aligned with the website content.
-- Certifications, technical skills, contact links, and project summaries in one scan-friendly page.
+- Selected AWS and Anthropic technical training, technical skills, contact links, and project summaries in one scan-friendly page.
 
 ## Featured Projects
 
