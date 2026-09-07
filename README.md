@@ -10,6 +10,7 @@ A static GitHub Pages portfolio for Omar Fouda, focused on production-oriented R
 
 - Responsive one-page portfolio built with HTML, CSS, and vanilla JavaScript.
 - Paid AI engineering experience on Nabra's live educational platform.
+- Completed FlyRank's Machine Learning Engineering Internship (Jul-Sep 2026), including 28 practical assignments and an accepted Google Search Ranking & Discoverability Capstone.
 - Evidence-backed Jobify case study covering the problem, architecture decisions, security work, outcomes, and limitations.
 - Focused positioning for Machine Learning, Applied AI, and AI Backend hiring managers.
 - Featured project links point to specific GitHub repositories instead of the generic profile page.
